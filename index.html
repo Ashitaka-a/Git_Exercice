@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation-du-lion">
+    <meta name="author" content="Adrien Simon">
+    <title>Page de présentation du Lion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <section>
+        <img src="images/logo.svg" alt="Logo-du-site">
+        <h1>Le Lion : Roi de la Savane</h1>
+        <label for="sommaire">Sommaire</label><br>
+        <select id="sommaire" name="sommaire">
+            <option value="Pr" selected><a href="presentation">Pésentation</a></option>
+            <option value="Cr" selected><a href="caracteristiques">Caractéristiques</a></option>
+            <option value="Al" selected><a href="presentation">Pésentation</a></option>
+        </select>
+    </section>
+    <section>
+        <h2>Présentation du Lion</h2>
+        <img src="images/lion_desktop.jpg"><br>
+        <p>Le <b>lion</b> (Panthera leo) est un mammifère carnivore de la famille des félins. Il est souvent surnommé <b>le roi des animaux</b> en raison de sa prestance et de sa position de prédateur au sommet de la chaîne alimentaire.</p>
+    </section>
+    <section>
+        <h2>Caractéristiques du lion</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Caractéristiques</th>
+                    <th>Détails</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Famille</td>
+                    <td>Fidélité</td>
+                </tr>
+                <tr>
+                    <td>Poids</td>
+                    <td>150 à 250 kg</td>
+                </tr>
+                <tr>
+                    <td>Longévité</td>
+                    <td>10 à 15 ans (sauvage), jusqu'à 25 ans (captivité)</td>
+                </tr>
+                <tr>
+                    <td>Habitat</td>
+                    <td>Savane Africaine, quelques populations en Asie</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Alimentation</h2>
+        <p>Le lion est un <b>carnivore</b> opportuniste qui chasse principalement des<b>herbivores</b>tels que :</p>
+        <ol type="A">
+            <li>Zèbres</li>
+            <li>Gnous</li>
+            <li>Antilopes</li>
+            <li>Buffles</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Ajouter un commentaire</h2>
+        <p>Pseudonyme :</p>
+        <input type="text" placeholder="Indiquez votre pseudonyme" name="pseudonyme" required><br><br>
+        <label for="email">Email :</label><br><br>
+        <input type="email" placeholder="Indiquez votre email" id="email" required><br><br>
+        <label for="message">Message :</label><br><br>
+        <textarea name="message" placeholder="Indiquez votre message" id="message" rows="5" cols="30"></textarea><br><br>
+        <button type="submit">Ajouter mon commentaire</button>
+    </section>
+    <section>
+        <h2>0 commentaires</h2>
+        <p>Aucun commentaire publié sur cet article</p>
+    </section>
+    <section>
+        <footer>
+            <p>@ 2025 blog sur la Faune Sauvage <a href="mentionslegales">Mentions légales</a></p>
+        </footer>
+    </section>
+</body>
+</html>
