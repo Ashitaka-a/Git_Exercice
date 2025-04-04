@@ -1,0 +1,78 @@
+:root {
+    --font-family-base: "Arial, sans-serif";
+    --line-height-base: 1.6;
+    --border-color: #000000;
+
+    --color-darkgrey: #333333;
+    --color-lightgrey: #f4f4f4;
+
+    --textarea-max-width: 600px;
+    --textarea-min-height: 4em;
+    --textarea-width: 100%;
+}
+
+body {
+    font-family: var(--font-family-base);
+    margin: 0;
+    padding: 0;
+    line-height: var(--line-height-base);
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: var(--color-lightgrey);
+}
+footer {
+    background: var(--color-darkgrey);
+    color: var(--color-lightgrey);
+    text-align: center;
+    padding: 10px;
+    margin: 0 -20px -20px -20px;
+    position: relative;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+h2, h3 {
+    margin-top: 2em;
+}
+
+form label {
+    display: block;
+}
+
+form textarea {
+    max-width: var(--textarea-max-width);
+    width: var(--textarea-width);
+    min-height: var(--textarea-min-height);
+}

@@ -14,19 +14,26 @@
         <img src="images/logo.svg" alt="Logo-du-site">
         <h1>Le Lion : Roi de la Savane</h1>
         <label for="sommaire">Sommaire</label><br>
-        <select id="sommaire" name="sommaire">
-            <option value="Pr" selected><a href="presentation">Pésentation</a></option>
-            <option value="Cr" selected><a href="caracteristiques">Caractéristiques</a></option>
-            <option value="Al" selected><a href="presentation">Pésentation</a></option>
-        </select>
+        <ul>
+            <li><a href="presentation" title="Présentation">Présentation</a></li>
+            <li><a href="caracteristiques" title="Caractéristiques">Caractéristiques</a></li>
+            <li><a href="alimentation" title="Alimentation">Alimentation</a></li>
+        </ul>
     </section>
     <section>
-        <h2>Présentation du Lion</h2>
-        <img src="images/lion_desktop.jpg"><br>
+        <h2 id="presentation">Présentation du Lion</h2>
+        <picture>
+            <!-- Image pour la version mobile pour un max-width de 600px -->
+             <source srcset="images/lion_mobile.jpg" media="(max-width: 600px)">
+             <!-- Image pour la version desktop pour un max-width de 1024px -->
+             <source srcset="images/lion_desktop.jpg" media="(max-width: 1024px)">
+             <!-- Image par défaut -->
+             <img src="images/lion_desktop.jpg" alt="Lion_Desktop">
+        </picture>
         <p>Le <b>lion</b> (Panthera leo) est un mammifère carnivore de la famille des félins. Il est souvent surnommé <b>le roi des animaux</b> en raison de sa prestance et de sa position de prédateur au sommet de la chaîne alimentaire.</p>
     </section>
     <section>
-        <h2>Caractéristiques du lion</h2>
+        <h2 id="caracteristiques">Caractéristiques du lion</h2>
         <table border="1">
             <thead>
                 <tr>
@@ -55,8 +62,8 @@
         </table>
     </section>
     <section>
-        <h2>Alimentation</h2>
-        <p>Le lion est un <b>carnivore</b> opportuniste qui chasse principalement des<b>herbivores</b>tels que :</p>
+        <h2 id="alimentation">Alimentation</h2>
+        <p>Le lion est un <b>carnivore</b> opportuniste qui chasse principalement des <b>herbivores</b> tels que :</p>
         <ol type="A">
             <li>Zèbres</li>
             <li>Gnous</li>
@@ -66,8 +73,8 @@
     </section>
     <section>
         <h2>Ajouter un commentaire</h2>
-        <p>Pseudonyme :</p>
-        <input type="text" placeholder="Indiquez votre pseudonyme" name="pseudonyme" required><br><br>
+        <label for="pseudonyme">Pseudonyme :</label><br><br>
+        <input type="pseudonyme" placeholder="Indiquez votre pseudonyme" id="pseudonyme" required><br><br>
         <label for="email">Email :</label><br><br>
         <input type="email" placeholder="Indiquez votre email" id="email" required><br><br>
         <label for="message">Message :</label><br><br>
