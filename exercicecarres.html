@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial;
+		}
+
+		.container {
+			height: 100vh;
+            display: flex;
+
+		}
+
+		.item:before {
+			content: "Item " counter(grid-counter);
+		}
+
+		.item {
+			background-color: #f08080;
+			counter-increment: grid-counter;
+			padding: 50px;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		.item:first-of-type {
+			background: #ff8487;
+            justify-content: end;
+		}
+
+		.item:nth-child(2) {
+			background: #3c38ba;
+            justify-content: end;
+		}
+
+		.item:nth-child(3) {
+			background: #00c774;
+            justify-content: end;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="flex">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+		</div>
+	</body>
+</html>

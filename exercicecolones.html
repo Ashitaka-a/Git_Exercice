@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<style>
+		/* Doc */
+		* {
+			box-sizing: border-box;
+		}
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			height: 100vh;
+			counter-reset: grid-counter;
+			background: #c7f4d0;
+		}
+
+		.item:before {
+			content: "Item " counter(grid-counter);
+		}
+
+		/* Résultats */
+		.grid {
+			height: 100vh;
+			/** Votre personnalisation ici **/
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 2%;     
+		}
+
+		.item {
+			background-color: #f08080;
+			counter-increment: grid-counter;
+            text-align: center;
+            place-content: center;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="grid">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+		</div>
+	</body>
+</html>
