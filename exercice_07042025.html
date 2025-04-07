@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head role="banner">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interface Non Accessible</title>
+		<link rel="stylesheet" href="exercice_07042025" />
+	</head>
+	<body>
+		<div class="header">
+            <header role="banner">
+			<h1>Bienvenue sur notre site</h1>
+                <nav role="navigation" aria-label="Menu principal"></nav>
+			        <div class="nav">
+				        <ul>
+					        <li><a href="#" title="Retour à l'accueil" tabindex="0">Accueil</a></li>
+					        <li><a href="#" title="Retour aux servives" tabindex="0">Services</a></li>
+					        <li><a href="#" title="Retour à contact" tabindex="0">Contact</a></li>
+				        </ul>
+			        </div>
+            </header>
+		</div>
+
+		<main class="main">
+			<h2>Nos Services</h2>
+			    <button
+				    class="toggle_menu_services" id="menuServices-toggle" 
+				    aria-expanded="false"
+				    aria-controls="menuServices">
+				    ☰ Menu
+			    </button>
+            <div id="menuServices" hidden>
+                    <nav role="navigation" aria-label="Menu Services">
+			<ul>
+				<li><a href="#" title="Menu éveloppement web" tabindex="0">Développement web</a></li>
+				<li><a href="#" title="Menu SEO" tabindex="0">SEO</a></li>
+				<li><a href="#" title="Menu SEA" tabindex="0">SEA</a></li>
+				<li><a href="#" title="Menu marketing digital" tabindex="0">Marketing Digital</a></li>
+				<li><a href="#" title="Menu UX design" tabindex="0">UX Design</a></li>
+			</ul>
+                    </nav>
+        </div>
+			<div class="service" role="region" >
+				<h3>Développement Web</h3>
+				<p>Nous créons des sites modernes et sur-mesure.</p>
+                <input type="button" role="button" value="En savoir plus">
+				<button>En savoir plus</button>
+			</div>
+
+			<div class="service" role="region" >
+				<h3>SEO</h3>
+				<p>Optimisation des sites pour Google.</p>
+                <input type="button" role="button" value="En savoir plus">
+				<button>En savoir plus</button>
+			</div>
+
+			<img src="http://picsum.photos/800/600?v=1" alt="Images de paysages" />
+
+			<div class="contact">
+				<h2>Nous contacter</h2>
+				<form>
+					<input type="text" aria-label="Nom" aria-required="true" placeholder="Nom complet" />
+					<input type="email" aria-label="Email" aria-required="true" placeholder="Email" />
+					<textarea aria-label="Votre message" placeholder="Votre message"></textarea>
+                    <input type="button" role="button" value="Envoyer">
+					<button>Envoyer</button>
+				</form>
+			</div>
+		</main>
+
+		<div class="footer">
+			<p>© 2025 - Tous droits réservés</p>
+		</div>
+        <script src="script.js"></script>
+	</body>
+</html>
