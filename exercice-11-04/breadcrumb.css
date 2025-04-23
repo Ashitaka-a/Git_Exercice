@@ -1,0 +1,17 @@
+.c-breadcrumb {
+    margin-top: 20px;
+    font-size: 16px;
+    display: flex;
+  }
+
+
+.c-breadcrumb a {
+    color: blue;
+    text-decoration: underline;
+  }
+
+
+.c-breadcrumb span {
+    margin: 0 8px;
+    color: black;
+  }

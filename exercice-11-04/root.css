@@ -1,0 +1,21 @@
+:root {
+    /** Global variables */
+--border-radius-base: 5px;
+--border-color: #dadada;
+--color-green: #6e8943;
+--transition-duration-short: 0.2s;
+
+    /** Product variables */
+--product-padding-inner: 20px;
+--product-max-width: 250px;
+--product-grid-gap: 10px;
+--product-inner-gap: 5px;
+--product-link-color: #000;
+--product-link-color-hover: #ff0000;
+--product-font-weight: bold;
+--product-image-max-width: 150px;
+
+/** Sur mobile, on souhaite utiliser ces variables */
+--product-grid-gap: 20px;
+--product-image-max-width-mobile: 100px;
+}
