@@ -1,4 +1,4 @@
-let prenom = prompt("Quel est ton nom et prénom ?");
+let prenom = prompt("Quel est ton prénom et nom ?");
 let age = parseInt(prompt("Quel est ton âge ?"));
 let estEtudiant = prompt("Es-tu étudiant ? (oui/non)").toLowerCase() === "oui";
 let nombreTickets = parseInt(prompt("Combien de tickets veux-tu acheter ?"));
@@ -8,9 +8,9 @@ const prixBase = 12;
 if (age < 12) {
     reduction = 0.5;
 } else if (age > 60) {
-    reduction = 0,3;
+    reduction = 0.3;
 } else if (estEtudiant) {
-    reduction = 0,2;
+    reduction = 0.2;
 } else {
     reduction = 0;
 }
