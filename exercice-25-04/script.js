@@ -5,13 +5,6 @@ let nombreTickets = parseInt(prompt("Combien de tickets veux-tu acheter ?"));
 let reduction;
 const prixBase = 12;
 
-console.log(prenom);
-console.log(age);
-console.log(estEtudiant);
-console.log(nombreTickets);
-console.log(reduction);
-console.log(prixBase);
-
 if (age < 12) {
     reduction = 0.5;
 } else if (age > 60) {
@@ -21,3 +14,16 @@ if (age < 12) {
 } else {
     reduction = 0;
 }
+
+if (nombreTickets > 3) {
+    reduction = 0,1;
+} else {
+    reduction = 0;
+}
+
+console.log(prenom);
+console.log(age);
+console.log(estEtudiant);
+console.log(nombreTickets);
+console.log(reduction);
+console.log(prixBase);
