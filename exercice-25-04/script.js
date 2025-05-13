@@ -15,19 +15,15 @@ if (age < 12) {
     reduction = 0;
 }
 
-let prixSansReduction = nombreTickets * prixBase;
-let prixAvecReduction = prixSansReduction * (1 - reduction);
-
 if (nombreTickets > 3) {
-    prixAvecReduction *= 0.9; /* permet d'appliquer une réduction supplémentaire en plus de celles au dessus */
+    reduction = 0,1;
+} else {
+    reduction = 0;
 }
 
-prixAvecReduction = prixAvecReduction.toFixed(2);
-
-let split = prenom.split(" ");
-let lePrenom = split[0];
-let leNom = split[1];
-let taillePrenom = lePrenom.length;
-let debutNom = leNom.slice(0,1).toUpperCase() + leNom.slice(1,2).toLowerCase();
-
-alert(`Bonjour ${lePrenom} ${leNom}, ton nom commence par ${debutNom}, tu as ${age} ans et tu paies ${prixAvecReduction} € pour ${nombreTickets} tickets.`);
+console.log(prenom);
+console.log(age);
+console.log(estEtudiant);
+console.log(nombreTickets);
+console.log(reduction);
+console.log(prixBase);
