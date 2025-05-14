@@ -1,0 +1,23 @@
+.accordion__bloc {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+
+.accordion__title {
+    font-size: 24px;
+}
+
+.accordion__answer-bloc {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.accordion__bloc.active .caret-down {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.accordion__answer {
+    font-size: 16px;
+}
