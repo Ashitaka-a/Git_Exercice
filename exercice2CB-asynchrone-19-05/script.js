@@ -16,10 +16,11 @@ buttonStart.addEventListener("click", function(){
 });
 
 buttonEnd.addEventListener("click", function(){
-    clearInterval(intervalle);
+    clearInterval(intervalle); // Met pause au chrono
 });
 
 buttonReset.addEventListener("click", function() {
+    clearInterval(intervalle); // Arrête le chrono s'il tourne
     intervalle = null; // Remet l'état comme initial
     compteur = 0; // Remet le compteur à 0
     display.textContent = compteur; // Met à jour l'affichage
