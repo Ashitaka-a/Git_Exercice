@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercice">
+    <meta name="author" content="Adrien Simon">
+    <title>Exercice 06/05</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+
+    <button onclick="afficherDOM()">Afficher le DOM</button>
+
+    <h1 id="titre">Bienvenue !</h1>
+    <button onclick="changerTitre()">Changer le titre</button>
+
+    <p>Paragraphe 1</p>
+    <p>Paragraphe 2</p>
+    <p>Paragraphe 3</p>
+    <button onclick="changerParagraphes()">Changer tous les paragraphes</button>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+      
+    <button onclick="colorierLi()">Colorier les éléments</button>
+
+    <div class="boite">Boîte 1</div>
+    <div class="boite">Boîte 2</div>
+    <div class="boite">Boîte 3</div>
+
+    <button onclick="changerBoites()">Changer les boîtes</button>
+
+    <ul id="maListe">
+        <li>Élément 1</li>
+        <li>Élément 2</li>
+        <li>Élément 3</li>
+        </ul>
+      
+      <button id="ajouter">Ajouter un élément</button>
+
+    <button onclick="creerElement()">Créer un paragraphe</button>
+    <div id="zoneCreation"></div>
+
+    <p id="texteModifiable">Texte d'origine</p>
+    <button onclick="modifierTexte()">Modifier le texte</button>
+
+    <div id="bloc" style="width: 100px; height: 100px; background-color: lightblue;"></div>
+    <button onclick="ajouterClasse()">Ajouter une classe</button>
+
+    <div id="aSupprimer">Clique pour supprimer cet élément</div>
+    <button onclick="supprimerElement()">Supprimer</button>
+
+    <div id="zone1" style="border: 1px solid black; padding: 10px; margin-bottom: 10px;">Zone 1</div>
+    <div id="zone2" style="border: 1px solid black; padding: 10px;">Zone 2</div>
+    <button onclick="deplacerZone()">Déplacer vers Zone 2</button>
+
+    <ul id="maListe">
+        <li>Item 1</li>
+        <li id="item2">Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <button onclick="insererAvant()">Insérer avant Item 2</button>
+
+
+</body>
+</html>
